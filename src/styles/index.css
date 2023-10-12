@@ -1,0 +1,171 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* PGAE NOT FOUND */
+
+.page-not-found-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.error {
+  font-size: 150px;
+  color: #008b62;
+  text-shadow: 1px 1px 1px #00593e, 2px 2px 1px #00593e, 3px 3px 1px #00593e,
+    4px 4px 1px #00593e, 5px 5px 1px #00593e, 6px 6px 1px #00593e,
+    7px 7px 1px #00593e, 8px 8px 1px #00593e, 25px 25px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-home {
+  display: inline-block;
+  border: 2px solid #222;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1rem 0.6rem;
+  transition: all 0.2s linear;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-home:hover {
+  background: #222;
+  color: #ddd;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+  background: lightgray;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: rgb(88, 101, 101);
+}
+
+/* LAYOUT */
+.bg-color-primary {
+  background-color: #0c1014;
+}
+
+.webui-design-layout-container {
+  width: calc(100vw - 8px);
+  height: 100vh;
+}
+
+.webui-design-outlet-container {
+  overflow-y: auto;
+}
+
+nav {
+  height: 100px;
+}
+
+.nav-hamburger {
+  width: 100px;
+}
+
+.hamburger {
+  width: 60px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.mobile-menu-container {
+  position: absolute;
+
+  right: 0;
+  top: 150px;
+  width: calc(100vw - 8px);
+  height: calc(100vh - 150px);
+  border-radius: 20px 20px 0 0;
+  transition: all 0.5s ease-in-out;
+  animation: menu-bar 0.8s ease-in-out;
+
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes menu-bar {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.nav-sign-up-button {
+  border-radius: 50px !important;
+}
+
+.logo-white {
+  width: 60%;
+}
+
+.illustration-image {
+  width: 80%;
+}
+
+.dashboard-bot-image-container {
+  margin: 40 120px;
+}
+
+.dashboard-bot-image {
+  width: 350px;
+}
+
+.generic-section-text-container {
+  max-width: 100%;
+}
+
+.footer-container {
+  margin-top: 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-container {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .illustration-image {
+    width: 90%;
+  }
+
+  .dashboard-bot-image {
+    width: 650px;
+  }
+
+  .generic-section-text-container {
+    max-width: 500px;
+  }
+
+  .footer-container {
+    margin: 200px 100px 0 100px;
+  }
+}
