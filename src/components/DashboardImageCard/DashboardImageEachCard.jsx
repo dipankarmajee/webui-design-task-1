@@ -3,9 +3,11 @@ const DashboardImageEachCard = (props) => {
     <div className="d-flex flex-column align-items-center text-center gap-5 py-5">
       <img src={props.image} width={250} />
 
-      <div>
+      <div className="w-75">
         <p className="fs-4 fw-bold">{props.title}</p>
-        <span>{props.text}</span>
+        <div className="text-center ">
+          <span className="text-center">{props.text}</span>
+        </div>
       </div>
     </div>
   );
